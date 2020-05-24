@@ -2,8 +2,8 @@ pipeline {
    agent any
     environment{
        OKTA_OAUTH2_ISSUER         = '{https://dev-709745.okta.com}/oauth2/default'
-       OKTA_OAUTH2_CLIENT_ID      =  credentials('0oad10fp4SrzJxZD04x6')
-       OKTA_OAUTH2_CLIENT_SECRET  =  credentials('Tb_wVhqIU6VMEvoKU2Rj3XK81vUqJcJe3Wq6D6N8')
+       OKTA_OAUTH2_CLIENT_ID      =  credentials('OKTA_OAUTH2_CLIENT_ID')
+       OKTA_OAUTH2_CLIENT_SECRET  =  credentials('OKTA_OAUTH2_CLIENT_SECRET')
    }
    stages {
       stage('Build') {
